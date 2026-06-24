@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://eqj0bfplkil2"
+path="res://.godot/imported/4-02. Wild West (First Wave).mp3-768bbd667ec8aa5b3a6e91d421ef27d1.mp3str"
+
+[deps]
+
+source_file="res://Sound & Music/4-02. Wild West (First Wave).mp3"
+dest_files=["res://.godot/imported/4-02. Wild West (First Wave).mp3-768bbd667ec8aa5b3a6e91d421ef27d1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
