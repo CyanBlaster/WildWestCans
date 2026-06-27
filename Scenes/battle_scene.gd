@@ -11,3 +11,5 @@ func _process(delta: float) -> void:
 		instance.position.y = randi_range(350, 600)
 		get_tree().current_scene.add_child(instance)
 		timer = 5 - health.kills * 0.1
+	if(health.health <= 0):
+		get_tree().change_scene_to_file("res://Scenes/lose_scene.tscn")
