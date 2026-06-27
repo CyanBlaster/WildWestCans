@@ -1,21 +1,26 @@
-[gd_scene load_steps=5 format=3 uid="uid://dm57f8mguabon"]
+[gd_scene format=3 uid="uid://dm57f8mguabon"]
 
 [ext_resource type="Script" uid="uid://ckr8nase0tkws" path="res://Scenes/enemy.gd" id="1_1f0kj"]
 [ext_resource type="Texture2D" uid="uid://b4dja8botdb2o" path="res://Sprites/enemy.png" id="1_hghv2"]
 [ext_resource type="Texture2D" uid="uid://dlwhovvvcj4tr" path="res://Sprites/enemy_shoot.png" id="3_afpow"]
 [ext_resource type="Texture2D" uid="uid://2lj5mr40dn35" path="res://Sprites/enemy_dead.png" id="4_287tu"]
+[ext_resource type="AudioStream" uid="uid://d33jifjukuuyh" path="res://Sound & Music/pistol-shot.mp3" id="5_0830c"]
 
-[node name="Enemy" type="Node2D" node_paths=PackedStringArray("idle", "shoot", "dead")]
+[node name="Enemy" type="Node2D" unique_id=685541757 node_paths=PackedStringArray("idle", "shoot", "dead", "shot")]
 script = ExtResource("1_1f0kj")
 idle = NodePath("Idle")
 shoot = NodePath("Shoot")
 dead = NodePath("Dead")
+shot = NodePath("AudioStreamPlayer")
 
-[node name="Idle" type="Sprite2D" parent="."]
+[node name="Idle" type="Sprite2D" parent="." unique_id=1954878163]
 texture = ExtResource("1_hghv2")
 
-[node name="Shoot" type="Sprite2D" parent="."]
+[node name="Shoot" type="Sprite2D" parent="." unique_id=2105333277]
 texture = ExtResource("3_afpow")
 
-[node name="Dead" type="Sprite2D" parent="."]
+[node name="Dead" type="Sprite2D" parent="." unique_id=1908656471]
 texture = ExtResource("4_287tu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=116615857]
+stream = ExtResource("5_0830c")

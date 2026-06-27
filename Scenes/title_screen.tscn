@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://enff6r6re5gd"]
+
+[ext_resource type="Script" uid="uid://c5ybi4032yym0" path="res://Scenes/title_screen.gd" id="1_klylv"]
+[ext_resource type="Texture2D" uid="uid://cqx4lrfm4j55h" path="res://Sprites/wild_town.jpg" id="2_p3fck"]
+
+[node name="title_screen" type="Node2D" unique_id=1209035890]
+script = ExtResource("1_klylv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1652705244]
+position = Vector2(576.00006, 324.25)
+scale = Vector2(1.6302521, 1.9159292)
+texture = ExtResource("2_p3fck")
+
+[node name="Label" type="Label" parent="." unique_id=152052268]
+offset_left = 484.0
+offset_top = 68.0
+offset_right = 646.0
+offset_bottom = 91.0
+text = "Shoot 'em up! - CANS"
+
+[node name="Label2" type="Label" parent="." unique_id=879726516]
+offset_left = 451.0
+offset_top = 465.0
+offset_right = 698.0
+offset_bottom = 488.0
+text = "Click the screen to start playing!"
+
+[node name="Label3" type="Label" parent="." unique_id=1601391975]
+offset_left = 523.0
+offset_top = 553.0
+offset_right = 615.0
+offset_bottom = 576.0
+text = "Click to fire!"

@@ -1,43 +1,61 @@
-[gd_scene load_steps=9 format=3 uid="uid://d2ae61xxppgxb"]
+[gd_scene format=3 uid="uid://d2ae61xxppgxb"]
 
 [ext_resource type="Script" uid="uid://bs5wetxeta8k1" path="res://Scenes/battle_scene.gd" id="1_e5vbs"]
 [ext_resource type="Texture2D" uid="uid://cgyc4giaun4j6" path="res://Sprites/background.png" id="2_3gnqe"]
+[ext_resource type="AudioStream" uid="uid://bj4cp63haqex6" path="res://Sound & Music/freesound_community-empty-gun-shot-6209.mp3" id="2_84vmf"]
 [ext_resource type="PackedScene" uid="uid://cjpak73lmexa7" path="res://Scenes/playerShot.tscn" id="3_gt16y"]
+[ext_resource type="Script" uid="uid://b1o7bi8x37q0o" path="res://Scenes/empty.gd" id="3_xdap8"]
 [ext_resource type="PackedScene" uid="uid://bl247rwmb6iv8" path="res://Scenes/player.tscn" id="4_20f6w"]
 [ext_resource type="Script" uid="uid://dmpxsvvscrc60" path="res://Scenes/health.gd" id="5_3gnqe"]
 [ext_resource type="Script" uid="uid://cfgltrou36xox" path="res://Scenes/score.gd" id="6_gt16y"]
 [ext_resource type="AudioStream" uid="uid://eqj0bfplkil2" path="res://Sound & Music/4-02. Wild West (First Wave).mp3" id="7_20f6w"]
 [ext_resource type="Script" uid="uid://bp5bs6mo16lva" path="res://Scenes/highscore.gd" id="8_w4764"]
+[ext_resource type="Script" uid="uid://c75msveb58yjo" path="res://Scenes/ammo.gd" id="9_ed262"]
+[ext_resource type="AudioStream" uid="uid://dilfpbahbgc0n" path="res://Sound & Music/gunshotjbudden.mp3" id="10_f4ggb"]
+[ext_resource type="Script" uid="uid://bhr2swums3k80" path="res://Scenes/audio_stream_player_2.gd" id="11_wb0gu"]
 
-[node name="Battle Scene" type="Node2D"]
+[node name="Battle Scene" type="Node2D" unique_id=139026429]
 script = ExtResource("1_e5vbs")
 
-[node name="Background" type="Sprite2D" parent="."]
+[node name="Empty" type="AudioStreamPlayer" parent="." unique_id=2024934743]
+stream = ExtResource("2_84vmf")
+script = ExtResource("3_xdap8")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=2116269407]
 position = Vector2(574.00006, 385)
 scale = Vector2(3.8500001, 3.8500001)
 texture = ExtResource("2_3gnqe")
 
-[node name="Node2D" parent="." instance=ExtResource("3_gt16y")]
+[node name="Node2D" parent="." unique_id=401678664 instance=ExtResource("3_gt16y")]
 
-[node name="Player" parent="." instance=ExtResource("4_20f6w")]
+[node name="Player" parent="." unique_id=1966230165 instance=ExtResource("4_20f6w")]
 
-[node name="Health" type="Label" parent="."]
+[node name="Health" type="Label" parent="." unique_id=2037294519]
 offset_right = 40.0
 offset_bottom = 23.0
 script = ExtResource("5_3gnqe")
 
-[node name="Score" type="Label" parent="."]
+[node name="Score" type="Label" parent="." unique_id=1718013600]
 offset_left = 241.0
 offset_right = 281.0
 offset_bottom = 23.0
 script = ExtResource("6_gt16y")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=415993677]
 stream = ExtResource("7_20f6w")
-autoplay = true
 
-[node name="Highscore" type="Label" parent="."]
+[node name="Highscore" type="Label" parent="." unique_id=445092611]
 offset_left = 405.0
 offset_right = 445.0
 offset_bottom = 23.0
 script = ExtResource("8_w4764")
+
+[node name="Ammo" type="Label" parent="." unique_id=968115476]
+offset_left = 639.0
+offset_right = 679.0
+offset_bottom = 23.0
+script = ExtResource("9_ed262")
+
+[node name="Gunshot" type="AudioStreamPlayer" parent="." unique_id=320719850]
+stream = ExtResource("10_f4ggb")
+script = ExtResource("11_wb0gu")

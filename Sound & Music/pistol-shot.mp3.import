@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d33jifjukuuyh"
+path="res://.godot/imported/pistol-shot.mp3-77e5c228e9d3a426130c400ce1d2ab4b.mp3str"
+
+[deps]
+
+source_file="res://Sound & Music/pistol-shot.mp3"
+dest_files=["res://.godot/imported/pistol-shot.mp3-77e5c228e9d3a426130c400ce1d2ab4b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bj4cp63haqex6"
+path="res://.godot/imported/freesound_community-empty-gun-shot-6209.mp3-2cd4979d5cd1664496bc1fa4351c3153.mp3str"
+
+[deps]
+
+source_file="res://Sound & Music/freesound_community-empty-gun-shot-6209.mp3"
+dest_files=["res://.godot/imported/freesound_community-empty-gun-shot-6209.mp3-2cd4979d5cd1664496bc1fa4351c3153.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,6 +1,45 @@
-[gd_scene load_steps=2 format=3 uid="uid://djkguns3gojdy"]
+[gd_scene format=3 uid="uid://djkguns3gojdy"]
 
 [ext_resource type="Script" uid="uid://cklmfnwdkwycj" path="res://Scenes/lose_scene.gd" id="1_bjqob"]
+[ext_resource type="Texture2D" uid="uid://ni8q8ae0t5og" path="res://Sprites/graveyardy.webp" id="2_bat8a"]
+[ext_resource type="Script" uid="uid://defp7wqlmv30y" path="res://Scenes/label_2.gd" id="2_gl6ei"]
+[ext_resource type="Script" uid="uid://w6mg65n1hrwy" path="res://Scenes/highscore_tracker.gd" id="4_3xoba"]
 
-[node name="lose_scene" type="Node2D"]
+[node name="lose_scene" type="Node2D" unique_id=335264278]
 script = ExtResource("1_bjqob")
+
+[node name="Graveyardy" type="Sprite2D" parent="." unique_id=2084780241]
+position = Vector2(577, 321.5)
+scale = Vector2(2.4166667, 2.4333334)
+texture = ExtResource("2_bat8a")
+
+[node name="Label" type="Label" parent="." unique_id=771221113]
+offset_left = 536.0
+offset_top = 63.0
+offset_right = 635.0
+offset_bottom = 86.0
+text = "Oof, you died!"
+
+[node name="Label2" type="Label" parent="." unique_id=904974854]
+offset_left = 399.0
+offset_top = 91.0
+offset_right = 907.0
+offset_bottom = 257.0
+text = "Score"
+script = ExtResource("2_gl6ei")
+
+[node name="Highscore Tracker" type="Label" parent="." unique_id=1126489596]
+offset_left = 388.0
+offset_top = 225.0
+offset_right = 766.0
+offset_bottom = 254.0
+text = "Highscore"
+script = ExtResource("4_3xoba")
+
+[node name="Label3" type="Label" parent="." unique_id=1611129276]
+offset_left = 483.0
+offset_top = 258.0
+offset_right = 697.0
+offset_bottom = 307.0
+text = "Would you like to try again?
+Press Shoot if that is a yes!"
