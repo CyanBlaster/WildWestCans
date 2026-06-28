@@ -13,6 +13,8 @@
 [ext_resource type="Script" uid="uid://c75msveb58yjo" path="res://Scenes/ammo.gd" id="9_ed262"]
 [ext_resource type="AudioStream" uid="uid://dilfpbahbgc0n" path="res://Sound & Music/gunshotjbudden.mp3" id="10_f4ggb"]
 [ext_resource type="Script" uid="uid://bhr2swums3k80" path="res://Scenes/audio_stream_player_2.gd" id="11_wb0gu"]
+[ext_resource type="AudioStream" uid="uid://bdvqhwtihovas" path="res://Sound & Music/gunreload.mp3" id="14_f856b"]
+[ext_resource type="Script" uid="uid://bwvgan5pc5gq5" path="res://Scenes/reload.gd" id="15_778cw"]
 
 [node name="Battle Scene" type="Node2D" unique_id=139026429]
 script = ExtResource("1_e5vbs")
@@ -59,3 +61,7 @@ script = ExtResource("9_ed262")
 [node name="Gunshot" type="AudioStreamPlayer" parent="." unique_id=320719850]
 stream = ExtResource("10_f4ggb")
 script = ExtResource("11_wb0gu")
+
+[node name="Reload" type="AudioStreamPlayer" parent="." unique_id=607629201]
+stream = ExtResource("14_f856b")
+script = ExtResource("15_778cw")

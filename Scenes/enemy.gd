@@ -24,7 +24,7 @@ func _process(delta: float) -> void:
 		if(position.x >= get_global_mouse_position().x - 25 && position.x <= get_global_mouse_position().x + 25
 		 && position.y >= get_global_mouse_position().y - 35 && position.y <= get_global_mouse_position().y + 35):
 			print(health.ammo)
-			if(health.ammo >= 0):
+			if(health.ammo > 0):
 				hp -= 1;
 				health.kills += 1
 				killing = 0
